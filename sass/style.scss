@@ -1072,12 +1072,25 @@ input[type="text"] {
 	}	
 }
 
-//
+//helper class(?) work single page row bottom padding
+.row-bottom-padded-lg {
+	padding-bottom: 7em;
+	@media screen and (max-width: $screen-sm ) {
+		padding-bottom: 2em;
+	}
+}
+
 .row-bottom-padded-md {
 	padding-bottom: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
 	}	
+}
+
+//work single page head padding
+.qbootstrap-heading-wrap{
+	padding-top: 7em;
+	clear: both;
 }
 
 // footer
