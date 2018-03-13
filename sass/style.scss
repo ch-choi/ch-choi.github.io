@@ -327,6 +327,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+//qbootstrap-work
+#qbootstrap-work{
+	padding: 7em 0;
+	clear: both;
+	@media screen and (max-width: $screen-sm) {
+		padding: 3em 0;
+	}
+}
 
 
 // Header START
@@ -1028,6 +1036,48 @@ input[type="text"] {
 		font-size: 24px;
 		color: $brand-primary;
 	}
+}
+
+//go to top
+.gototop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(.5s);
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	a {
+		width: 50px;
+		height: 50px;
+		display: table;
+		background: rgba(0,0,0,.5);
+		color: $brand-white;
+		text-align: center;
+		@include border-radius(4px);
+		i {
+			height: 50px;
+			display: table-cell;
+			vertical-align: middle;
+
+		}
+		&:hover, &:active, &:focus {
+			text-decoration: none;
+			outline: none;
+		}
+	}	
+}
+
+//
+.row-bottom-padded-md {
+	padding-bottom: 4em;
+	@media screen and (max-width: $screen-sm ) {
+		padding-bottom: 2em;
+	}	
 }
 
 // footer
