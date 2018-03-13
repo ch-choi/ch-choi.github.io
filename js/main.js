@@ -167,6 +167,7 @@
 		burgerMenu();
 		counterWayPoint();
 		contentWayPoint();
+		goToTop();
 		owlCarouselFeatureSlide();
 	});
 
